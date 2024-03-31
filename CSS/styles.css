@@ -205,8 +205,8 @@ background: linear-gradient(
 /* NAVBAR SECTION */
 .navbar{
     background: linear-gradient(
-        153.47deg,
-        rgba(255, 255, 255, 0) -341.94%,
+        353.47deg,
+        rgba(255, 255, 255, 10) -41.94%,
         #14101d 95.11%);    position: static;
     color: var(--dimWhite);
     min-height: 50px;
@@ -696,34 +696,30 @@ background-clip: text;
         border-radius: 50%;
     }
 
-    
-
-    /* body{
-        display: none;
-    } */
-
-    #hero, #about, #token{
-        padding: 0 20px;
-    }
-
     .hero-content{
         text-align: center;
     }
 
     .hero .container{
-        padding-top: 70px;
+        padding-top: 0px;
+        margin-top: 90px;
     }
 
     .hero .container, .about .container, .token .container{
         grid-template-columns: 1fr;
     }
 
-    .about .container{
-        padding-top: 30px;
+
+
+    .about .container, .token .container{
+        padding-top: 10px;
+        gap: 0px;
     }
 
+
+
     #about{
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
 
     .navbar .container ul{
@@ -731,6 +727,7 @@ background-clip: text;
     }
 
     .token .container{
+        padding-top: 10px;
         grid-template-columns: 1fr;
     }
 
@@ -760,15 +757,20 @@ background-clip: text;
 
     }
 
+    #hero{
+        margin-bottom: 0px;
+        padding-top: 0px;
+        height: 500px; 
+    }
 
-    #about, #hero, #token{
+    #about, #token{
         margin-bottom: 30px;
-        padding-top: 20px;
+        padding-top: 0px;
         
     }
 
     .hero{
-        padding-top: 20px;
+        padding-top: 0px;
     }
 
     #buy{
@@ -777,19 +779,12 @@ background-clip: text;
     }
 
     .about .container img, .hero .container img, .token .container img{
-        height: 40vh;
+        height: 35vh;
         width: 100vw;
     }
 
-    .hero
-
-    /* .hero .container img{
-        height: 50vh;
-        width: 100vw;
-    } */
-
     #token{
-        padding-top: 50px;
+        padding-top: 0px;
     }
 
     /* .token .container img{
@@ -797,12 +792,19 @@ background-clip: text;
         width: 100vw;
     } */
 
-    .hero .container .hero-content, .about .container .about-content{
+    .hero-content, .about-content{
         width: 100%;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .about .container img{
+        margin-top: -10px;
     }
 
     .card-section{
         grid-template-columns: 1fr;
+        width: 100vw;
     }
 
     
@@ -819,6 +821,12 @@ background-clip: text;
 
     .footer .container{
         flex-direction: column;
+    }
+
+    .social{
+        width: 30px;
+        height:23px;
+        margin-bottom: 20px;
     }
 
     .footer .container p{
